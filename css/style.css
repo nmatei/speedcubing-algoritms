@@ -1,0 +1,63 @@
+html, body {
+    height:100%;
+}
+
+#algorithms {
+    padding: 5px;
+    display: inline-block;
+    list-style: none;
+}
+
+.algorithm {
+    border: 1px solid #29a7e1;
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    background: #ffffff;
+    float: left;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.algorithm img {
+    width: 100%;
+}
+
+#algModal .modal-body {
+    /*font-size: 3em;*/
+    /*font-family: "Lucida Console", Monaco, monospace;*/
+    /*font-family: "Courier New", Courier, monospace;*/
+    font-size: 16px;
+    font-size: 4vw;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.formula {
+    font-style: italic;
+    border: 1px solid #ffeb3b !important;
+    background: #ffeb3b !important;
+    padding: 0 4px;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 1px;
+}
+
+.f-RURiUi, .f-LiUiLU  {
+    color: green;
+    border-top-color: blue !important;
+}
+.f-RiFRFi{
+    color: red;
+    border-bottom-color: blue !important;
+}
+
+.f-RURiUi:before, .f-LiUiLU:before{
+    content: '↑';
+}
+
+.f-RiFRFi:before {
+    content: '↓';
+}
