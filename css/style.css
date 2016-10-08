@@ -2,6 +2,9 @@ html, body {
     height:100%;
 }
 
+#settings {
+    padding: 5px 10px 0 10px;
+}
 #algorithms {
     padding: 5px;
     display: inline-block;
@@ -12,7 +15,8 @@ html, body {
     border: 1px solid #29a7e1;
     border-radius: 5px;
     width: 100px;
-    height: 100px;
+    /*height: 100px;*/
+    /*height: 120px;*/
     padding: 5px;
     background: #ffffff;
     float: left;
@@ -23,13 +27,19 @@ html, body {
 .algorithm img {
     width: 100%;
 }
+.algorithm .f-text {
+    font-size: 8px;
+    text-align: center;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    min-height: 15px;
+}
 
 #algModal .modal-body {
-    /*font-size: 3em;*/
-    /*font-family: "Lucida Console", Monaco, monospace;*/
-    /*font-family: "Courier New", Courier, monospace;*/
-    font-size: 16px;
-    font-size: 4vw;
+    font-size: 20px;
+    font-size: 5vw;
     text-align: center;
     font-weight: bold;
 }
@@ -54,10 +64,31 @@ html, body {
     border-bottom-color: blue !important;
 }
 
-.f-RURiUi:before, .f-LiUiLU:before{
+.f-RURiUi:before {
     content: '↑';
+}
+.f-LiUiLU:before{
+    content: '↑';
+    color: blue;
 }
 
 .f-RiFRFi:before {
     content: '↓';
+}
+
+
+body.f-icons .formula {
+    font-size: 0;
+    padding: 0 1vw;
+}
+body.f-icons .formula:before {
+    font-size: 20px;
+    font-size: 5vw;
+}
+body.f-icons .f-text .formula {
+    padding: 0 4px;
+}
+body.f-icons .f-text .formula:before{
+    font-size: 8px;
+    /*font-size: 1vw;*/
 }

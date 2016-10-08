@@ -10,8 +10,8 @@ $('li.g1-column p').has('img').each(function(i, el) {
     }
 
     olls.push({
-        i: nr.text(),
-        s: img.attr('src'),
+        i: nr.text().replace(/\n/gi, '') * 1,
+        s: img.attr('src').replace('./OLL_files/', './images/oll/'),
         f: formulaEl.html()
     });
 });

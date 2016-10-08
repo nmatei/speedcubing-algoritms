@@ -2,7 +2,9 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <!--<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>SpeedCubing App</title>
 
     <link rel="shortcut icon" href="images/logo-32px.png" />
@@ -12,8 +14,18 @@
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+<body class="f-icons">
 
+<div id="settings">
+    <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-primary active">
+            <input type="radio" name="options" id="option-icons" autocomplete="off" checked> Icons
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" name="options" id="option-text" autocomplete="off"> Text
+        </label>
+    </div>
+</div>
 <ul id="algorithms">
 
 </ul>
