@@ -1,0 +1,396 @@
+{
+  "OLL": [
+    {
+      "i": 1,
+      "s": "./images/oll/110-300x300.png",
+      "f": "R U2 R’ U’ <span class=\"formula f-RURiUi\">R U R’ U’</span> R U’ R’"
+    },
+    {
+      "i": 2,
+      "s": "./images/oll/210-300x300.png",
+      "f": "R U2 R2 U’ R2 U’ R2 U2 R"
+    },
+    {
+      "i": 3,
+      "s": "./images/oll/310-300x300.png",
+      "f": "Lw (R D2 R’ U2) (R D2 R’ U2) R’"
+    },
+    {
+      "i": 4,
+      "s": "./images/oll/42-300x300.png",
+      "f": "Rw U R’ U’ Rw’ F R F’"
+    },
+    {
+      "i": 5,
+      "s": "./images/oll/51-300x300.png",
+      "f": "F’ Rw U R’ U’ Rw’ F R"
+    },
+    {
+      "i": 6,
+      "s": "./images/oll/61-300x300.png",
+      "f": "R U2 R’ U’ R U’ R’"
+    },
+    {
+      "i": 7,
+      "s": "./images/oll/71-300x300.png",
+      "f": "R U R’ U R U2 R’"
+    },
+    {
+      "i": 8,
+      "s": "./images/oll/111.png",
+      "f": "F (<span class=\"formula f-RURiUi\">R U R’ U’</span>) F’"
+    },
+    {
+      "i": 9,
+      "s": "./images/oll/101.png",
+      "f": "<span class=\"formula f-RURiUi\">R U R’ U’</span> <span class=\"formula f-RiFRFi\">R’ F R F’</span>"
+    },
+    {
+      "i": 10,
+      "s": "./images/oll/291.png",
+      "f": "Fw (<span class=\"formula f-RURiUi\">R U R’ U’</span>) Fw’"
+    },
+    {
+      "i": 11,
+      "s": "./images/oll/281.png",
+      "f": "B’ U’ R’ U R B"
+    },
+    {
+      "i": 12,
+      "s": "./images/oll/273.png",
+      "f": "R U B’ U’ R’ U R B R’"
+    },
+    {
+      "i": 13,
+      "s": "./images/oll/26666.png",
+      "f": "R’ U’ F U R U’ R’ F’ R"
+    },
+    {
+      "i": 14,
+      "s": "./images/oll/211.png",
+      "f": "(Rw U R’) (U R U’ R’ U R U2 Rw’)"
+    },
+    {
+      "i": 15,
+      "s": "./images/oll/251.png",
+      "f": "R B’ R2 F R2 B R2 F’ R"
+    },
+    {
+      "i": 16,
+      "s": "./images/oll/81.png",
+      "f": "(Rw’ U2) (R U R’ U Rw)"
+    },
+    {
+      "i": 17,
+      "s": "./images/oll/172.png",
+      "f": "Rw U2 R’ U’ R U’ Rw’"
+    },
+    {
+      "i": 18,
+      "s": "./images/oll/301.png",
+      "f": "Rw U R’ U R U2 Rw’"
+    },
+    {
+      "i": 19,
+      "s": "./images/oll/192.png",
+      "f": "Rw’ U’ R U’ R’ U2 Rw"
+    },
+    {
+      "i": 20,
+      "s": "./images/oll/202.png",
+      "f": "F R U’ R’ U’ R U R’ F’"
+    },
+    {
+      "i": 21,
+      "s": "./images/oll/181.png",
+      "f": "R U2 R2 F R F’ R U2 R’"
+    },
+    {
+      "i": 22,
+      "s": "./images/oll/241.png",
+      "f": "F (<span class=\"formula f-RURiUi\">R U R’ U’</span>) (<span class=\"formula f-RURiUi\">R U R’ U’</span>) F’"
+    },
+    {
+      "i": 23,
+      "s": "./images/oll/231.png",
+      "f": "F’ (<span class=\"formula f-LiUiLU\" title=\"i (Left)\">L’ U’ L U</span>) (<span class=\"formula f-LiUiLU\" title=\"i (Left)\">L’ U’ L U</span>) F"
+    },
+    {
+      "i": 24,
+      "s": "./images/oll/221.png",
+      "f": "Rw’ U Rw2 U’ Rw2 U’ Rw2 U Rw’"
+    },
+    {
+      "i": 25,
+      "s": "./images/oll/252.png",
+      "f": "Rw’ U’ R U’ R’ U R U’ R’ U2 Rw"
+    },
+    {
+      "i": 26,
+      "s": "./images/oll/121.png",
+      "f": "(R’ U’ R U’ R’ U R U) (R B’ R’ B)"
+    },
+    {
+      "i": 27,
+      "s": "./images/oll/272.png",
+      "f": "(R U R’ U R U’ R’ U’) (<span class=\"formula f-RiFRFi\">R’ F R F’</span>)"
+    },
+    {
+      "i": 28,
+      "s": "./images/oll/visualcube.png",
+      "f": "(R’ U’ R U) y’ (R B L’ B’) M’"
+    },
+    {
+      "i": 29,
+      "s": "./images/oll/151.png",
+      "f": "R’ U’ <span class=\"formula f-RiFRFi\">R’ F R F’</span> U R"
+    },
+    {
+      "i": 30,
+      "s": "./images/oll/admin-ajax.php_.png",
+      "f": "<span class=\"formula f-RURiUi\">R U R’ U’</span> R’ F R2 U R’ U’ F’"
+    },
+    {
+      "i": 31,
+      "s": "./images/oll/312.png",
+      "f": "R U R’ U <span class=\"formula f-RiFRFi\">R’ F R F’</span> R U2 R’"
+    },
+    {
+      "i": 32,
+      "s": "./images/oll/321.png",
+      "f": "R2 Rw’ U R’ U R U2 R’ U Rw R’"
+    },
+    {
+      "i": 33,
+      "s": "./images/oll/331-e1399573247639.png",
+      "f": "Rw R2 U’ R U’ R’ U2 R U’ Rw’ R"
+    },
+    {
+      "i": 34,
+      "s": "./images/oll/341.png",
+      "f": "L F’ <span class=\"formula f-LiUiLU\" title=\"i (Left)\">L’ U’ L U</span> F U’ L’"
+    },
+    {
+      "i": 35,
+      "s": "./images/oll/351.png",
+      "f": "R’ F <span class=\"formula f-RURiUi\">R U R’ U’</span> F’ U R"
+    },
+    {
+      "i": 36,
+      "s": "./images/oll/361.png",
+      "f": "F U R U’ R2 F’ R U R U’ R’"
+    },
+    {
+      "i": 37,
+      "s": "./images/oll/371.png",
+      "f": "R’ F R U R’ F’ R y’ R U’ R’"
+    },
+    {
+      "i": 38,
+      "s": "./images/oll/381.png",
+      "f": "Rw’ U’ M’ U’ R U Rw’ U Rw"
+    },
+    {
+      "i": 39,
+      "s": "./images/oll/a39.png",
+      "f": "Rw U Rw’ <span class=\"formula f-RURiUi\">R U R’ U’</span> Rw U’ Rw’"
+    },
+    {
+      "i": 40,
+      "s": "./images/oll/a40.png",
+      "f": "Rw U2 R’ U’ R2 Rw’ U R’ U’ Rw U’ Rw’"
+    },
+    {
+      "i": 41,
+      "s": "./images/oll/411.png",
+      "f": "F <span class=\"formula f-RURiUi\">R U R’ U’</span> R F’ Rw U R’ U’ Rw’"
+    },
+    {
+      "i": 42,
+      "s": "./images/oll/a42.png",
+      "f": "Fw <span class=\"formula f-RURiUi\">R U R’ U’</span> <span class=\"formula f-RURiUi\">R U R’ U’</span> Fw’"
+    },
+    {
+      "i": 43,
+      "s": "./images/oll/43.png",
+      "f": "R U R’ U R Dw’ R U’ R’ F’"
+    },
+    {
+      "i": 44,
+      "s": "./images/oll/a44.png",
+      "f": "M’ U M U2 M’ U M"
+    },
+    {
+      "i": 45,
+      "s": "./images/oll/45.png",
+      "f": "<span class=\"formula f-RURiUi\">R U R’ U’</span> M’ U R U’ Rw’"
+    },
+    {
+      "i": 46,
+      "s": "./images/oll/46.png",
+      "f": "Rw2 D’ Rw U Rw’ D Rw2 U’ Rw’ U’ Rw"
+    },
+    {
+      "i": 47,
+      "s": "./images/oll/a47.png",
+      "f": "F U R U’ B R’ F’ R B’ R’"
+    },
+    {
+      "i": 48,
+      "s": "./images/oll/a48.png",
+      "f": "R U R’ U R U2 R’ F <span class=\"formula f-RURiUi\">R U R’ U’</span> F’"
+    },
+    {
+      "i": 49,
+      "s": "./images/oll/49.png",
+      "f": "R’ U’ R U’ R’ U2 R F <span class=\"formula f-RURiUi\">R U R’ U’</span> F’"
+    },
+    {
+      "i": 50,
+      "s": "./images/oll/50.png",
+      "f": "R U2 R2 F R F’ U2 <span class=\"formula f-RiFRFi\">R’ F R F’</span>"
+    },
+    {
+      "i": 51,
+      "s": "./images/oll/a51-e1399574043345.png",
+      "f": "F <span class=\"formula f-RURiUi\">R U R’ U’</span> F’ Fw <span class=\"formula f-RURiUi\">R U R’ U’</span> Fw’"
+    },
+    {
+      "i": 52,
+      "s": "./images/oll/a52.png",
+      "f": "Rw’ R2 U R’ U Rw U2 Rw’ U M’"
+    },
+    {
+      "i": 53,
+      "s": "./images/oll/a53.png",
+      "f": "Rw’ R U’ Rw U2 Rw’ U’ R U’ R2 Rw"
+    },
+    {
+      "i": 54,
+      "s": "./images/oll/54.png",
+      "f": "R U R’ U <span class=\"formula f-RiFRFi\">R’ F R F’</span> U2 <span class=\"formula f-RiFRFi\">R’ F R F’</span>"
+    },
+    {
+      "i": 55,
+      "s": "./images/oll/55.png",
+      "f": "R U2 R2 F R F’ U2 M’ U R U’ L’"
+    },
+    {
+      "i": 56,
+      "s": "./images/oll/56.png",
+      "f": "Rw’ R U <span class=\"formula f-RURiUi\">R U R’ U’</span> M2 U R U’ Rw’"
+    },
+    {
+      "i": 57,
+      "s": "./images/oll/57.png",
+      "f": "R’ U2 F <span class=\"formula f-RURiUi\">R U R’ U’</span> F2 U2 F R"
+    }
+  ],
+  "PLL": [
+    {
+      "i": "Aa",
+      "s": "./images/pll/Aa.png",
+      "f": "Lw’ U R’ D2 R U’ R’ D2 R2"
+    },
+    {
+      "i": "Ab",
+      "s": "./images/pll/Ab.png",
+      "f": "Lw’&nbsp;R’ D2 R U R’ D2 R U’ R"
+    },
+    {
+      "i": "Ua",
+      "s": "./images/pll/Ua2.png",
+      "f": "R U’ R U R U R U’ R’ U’ R2"
+    },
+    {
+      "i": "Ub",
+      "s": "./images/pll/ub2.png",
+      "f": "R2 U <span class=\"formula f-RURiUi\">R U R’ U’</span> R’ U’ R’ U R’"
+    },
+    {
+      "i": "T",
+      "s": "./images/pll/T.png",
+      "f": "<span class=\"formula f-RURiUi\">R U R’ U’</span> R’ F R2 U’ R’ U’ R U R’ F’"
+    },
+    {
+      "i": "Y",
+      "s": "./images/pll/Y.png",
+      "f": "F R U’ R’ U’ R U R’ F’ <span class=\"formula f-RURiUi\">R U R’ U’</span> <span class=\"formula f-RiFRFi\">R’ F R F’</span>"
+    },
+    {
+      "i": "H",
+      "s": "./images/pll/H.png",
+      "f": "M2 U M2 U2 M2 U M2"
+    },
+    {
+      "i": "Z",
+      "s": "./images/pll/Z.png",
+      "f": "M2 U M2 U M’ U2 M2 U2 M’ U2"
+    },
+    {
+      "i": "Ja",
+      "s": "./images/pll/ja2.png",
+      "f": "F U’ R’ F R2 U’ R’ U’ R U R’ F’ R U R’ F’<span></span>"
+    },
+    {
+      "i": "Jb",
+      "s": "./images/pll/Jb.png",
+      "f": "R U R’ F’ <span class=\"formula f-RURiUi\">R U R’ U’</span> R’ F R2 U’ R’ U’"
+    },
+    {
+      "i": "F",
+      "s": "./images/pll/ASDF.png",
+      "f": "R’ U’ F’ <span class=\"formula f-RURiUi\">R U R’ U’</span> R’ F R2 U’ R’ U’ R U R’ U R"
+    },
+    {
+      "i": "E",
+      "s": "./images/pll/QWERTY.png",
+      "f": "R2 U R’ U’ y <span class=\"formula f-RURiUi\">R U R’ U’</span> <span class=\"formula f-RURiUi\">R U R’ U’</span> R U R’ y’ R U’ R2"
+    },
+    {
+      "i": "Ra",
+      "s": "./images/pll/Ra.png",
+      "f": "R U2 R’ U2 R B’ R’ U’ R U R B R2<span>\n</span>"
+    },
+    {
+      "i": "Rb",
+      "s": "./images/pll/Rb.png",
+      "f": "R’ U2 R U2 R’ F <span class=\"formula f-RURiUi\">R U R’ U’</span> R’ F’ R2"
+    },
+    {
+      "i": "Na",
+      "s": "./images/pll/Na.png",
+      "f": "R’ U R U’ R’ F’ U’ F R U R’ F R’ F’ R U’ R"
+    },
+    {
+      "i": "Nb",
+      "s": "./images/pll/Nb.png",
+      "f": "R’ U R2 B2 U R’ B2 R U’ B2 R2 U’ R"
+    },
+    {
+      "i": "Ga",
+      "s": "./images/pll/GAnou.png",
+      "f": "R2 u R’ U R’ U’ R u’ R2 y’ R’ U R"
+    },
+    {
+      "i": "Gb",
+      "s": "./images/pll/GBnou.png",
+      "f": "F’ U’ F R2 u R’ U R U’ R u’ R2"
+    },
+    {
+      "i": "Gc",
+      "s": "./images/pll/GCnou.png",
+      "f": "R2 u’ R U’ R U R’ u R2 y’ L U’ L’"
+    },
+    {
+      "i": "Gd",
+      "s": "./images/pll/POZA13.png",
+      "f": "R U R’ y’ R2 u’ R U’ R’ U R’ u R2"
+    },
+    {
+      "i": "V",
+      "s": "./images/pll/V.png",
+      "f": "R’ U R’ U’ y R’ F’ R2 U’ R’ U R’ F R F"
+    }
+  ]
+}

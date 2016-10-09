@@ -4,6 +4,7 @@ html, body {
 
 #settings {
     padding: 5px 10px 0 10px;
+    margin-bottom: 5px;
 }
 #algorithms {
     padding: 5px;
@@ -13,17 +14,23 @@ html, body {
 
 .algorithm {
     border: 1px solid #29a7e1;
+	box-shadow: 1px 1px 1px #888888;
     border-radius: 5px;
     width: 100px;
     /*height: 100px;*/
-    /*height: 120px;*/
+    min-height: 115px;
     padding: 5px;
     background: #ffffff;
     float: left;
     margin: 5px;
     cursor: pointer;
 }
-
+.algorithm.f-skip {
+    border-color: red;
+}
+.scramble {
+    font-weight: bold;
+}
 .algorithm img {
     width: 100%;
 }
@@ -42,6 +49,10 @@ html, body {
     font-size: 5vw;
     text-align: center;
     font-weight: bold;
+}
+#algModal .modal-title .icon {
+    width: 48px;
+    margin: -10px 5px -10px -5px;
 }
 
 
