@@ -54,7 +54,14 @@ html, body {
     width: 48px;
     margin: -10px 5px -10px -5px;
 }
-
+#algModal .modal-body .scramble {
+    margin-top: 10px;
+    font-size: 18px;
+    font-size: 3vw;
+    text-align: right;
+    color: blue;
+    border-top: 1px solid #e5e5e5;
+}
 
 .formula {
     font-style: italic;

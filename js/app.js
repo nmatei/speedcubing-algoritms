@@ -94,11 +94,12 @@ $('#algModal').on('show.bs.modal', function (event) {
         }
         return move;
     });
+    scramble = scramble.join(' ');
 
     modal.find('.modal-title').html('<img class="icon" src="' + algorithm.s +
-        '"><strong>' + id + '</strong>; ' +
-        'Scramble: <span class="scramble">' + scramble.join(' ') + '</span>');
-    modal.find('.modal-body').html(algorithm.f);
+        '"><strong>' + id + '</strong>; ');
+        // 'Scramble: <span class="scramble">' + scramble + '</span>');
+    modal.find('.modal-body').html(algorithm.f + '<div class="scramble">' + scramble + '</div>');
 });
 
 $('#option-icons').change(function () {
