@@ -18,7 +18,7 @@ html, body {
     border-radius: 5px;
     width: 100px;
     /*height: 100px;*/
-    min-height: 115px;
+    min-height: 116px;
     padding: 5px;
     background: #ffffff;
     float: left;
@@ -61,6 +61,17 @@ html, body {
     text-align: right;
     color: blue;
     border-top: 1px solid #e5e5e5;
+}
+
+@media (min-width: 1292px) {
+    .modal-lg {
+        width: 1200px;
+    }
+}
+@media (min-width: 1492px) {
+    .modal-lg {
+        width: 1400px;
+    }
 }
 
 .formula {
