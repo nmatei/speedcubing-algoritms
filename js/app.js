@@ -3,7 +3,7 @@ var SpeedCubing = {
         filtered: true
     },
     show: {
-        F2L: false,
+        F2L: true,
         OLL: true,
         PLL: true
     },
@@ -18,6 +18,10 @@ $.ajax({
     url: 'algorithms/all.json',
     success: function (algorithms) {
         var algKeys = {};
+        algorithms.F2L.forEach(function (el) {
+            el.i = "F2L-" + el.i;
+            algKeys[el.i] = el;
+        });
         algorithms.OLL.forEach(function (el) {
             el.i = "OLL-" + el.i;
             algKeys[el.i] = el;

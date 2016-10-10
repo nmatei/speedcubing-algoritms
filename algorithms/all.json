@@ -1,4 +1,211 @@
 {
+  "F2L": [
+    {
+      "i": 1,
+      "s": "./images/f2l/1-300x300.png",
+      "f": "R U R’"
+    },
+    {
+      "i": 2,
+      "s": "./images/f2l/2-300x300.png",
+      "f": "U R U’ R’"
+    },
+    {
+      "i": 3,
+      "s": "./images/f2l/3-300x300.png",
+      "f": "y’ R’ U’ R"
+    },
+    {
+      "i": 4,
+      "s": "./images/f2l/4-300x300.png",
+      "f": "Dw’ L’ U L"
+    },
+    {
+      "i": 5,
+      "s": "./images/f2l/5-300x300.png",
+      "f": "(U’ R U’ R’ U) (R U R’)"
+    },
+    {
+      "i": 6,
+      "s": "./images/f2l/6-300x300.png",
+      "f": "Dw (R’ U R U’) (R’ U’ R)"
+    },
+    {
+      "i": 7,
+      "s": "./images/f2l/7-300x300.png",
+      "f": "(U’ R U R’ U) (R U R’)"
+    },
+    {
+      "i": 8,
+      "s": "./images/f2l/8-300x300.png",
+      "f": "(Dw R’ U’ R U’) (R’ U’ R)"
+    },
+    {
+      "i": 9,
+      "s": "./images/f2l/9-300x300.png",
+      "f": "(R’ U2) (R2 U R2 U R)"
+    },
+    {
+      "i": 10,
+      "s": "./images/f2l/10-300x300.png",
+      "f": "(U’ R U2 R’) Dw (R’ U’ R)"
+    },
+    {
+      "i": 11,
+      "s": "./images/f2l/11-300x300.png",
+      "f": "Dw (R’ U2 R U2) (R’ U R)"
+    },
+    {
+      "i": 12,
+      "s": "./images/f2l/12-300x300.png",
+      "f": "(U’ R U2 R’ U2) (R U’ R’)"
+    },
+    {
+      "i": 13,
+      "s": "./images/f2l/13-300x300.png",
+      "f": "U’ (Rw U’) (R’ U R U Rw’)"
+    },
+    {
+      "i": 14,
+      "s": "./images/f2l/14-300x300.png",
+      "f": "(U’ R U R’ U2) (R U’ R’)"
+    },
+    {
+      "i": 15,
+      "s": "./images/f2l/15-300x300.png",
+      "f": "U (M’ R U’ Rw’ U’) (R U R’)"
+    },
+    {
+      "i": 16,
+      "s": "./images/f2l/16-300x300.png",
+      "f": "Lw (U L’ F’ L U’) Lw’"
+    },
+    {
+      "i": 17,
+      "s": "./images/f2l/17-300x300.png",
+      "f": "(R U2 R’ U’) (R U R’)"
+    },
+    {
+      "i": 18,
+      "s": "./images/f2l/18-300x300.png",
+      "f": "(R’ F R F’) (R U’ R’) (U R U’ R’)"
+    },
+    {
+      "i": 19,
+      "s": "./images/f2l/19-300x300.png",
+      "f": "U2 (R U R’ U) (R U’ R’)"
+    },
+    {
+      "i": 20,
+      "s": "./images/f2l/20-300x300.png",
+      "f": "U2 y’ (R’ U’ R) U’ (R’ U R)"
+    },
+    {
+      "i": 21,
+      "s": "./images/f2l/21-300x300.png",
+      "f": "U (R U2 R’ U) (R U’ R’)"
+    },
+    {
+      "i": 22,
+      "s": "./images/f2l/22-300x300.png",
+      "f": "y’ U’ (R’ U2 R U’) (R’ U R)"
+    },
+    {
+      "i": 23,
+      "s": "./images/f2l/23-300x300.png",
+      "f": "U (R U’ R’ U’) (R U’ R’ U) (R U’ R’)"
+    },
+    {
+      "i": 24,
+      "s": "./images/f2l/24-300x300.png",
+      "f": "Dw’ (L’ U L U) (L’ U L U’)  (L’ U L)"
+    },
+    {
+      "i": 25,
+      "s": "./images/f2l/25.png",
+      "f": "(U R U’ R’) F (R’ F’ R)"
+    },
+    {
+      "i": 26,
+      "s": "./images/f2l/26.png",
+      "f": "U’ (R U’ R’ U’ R U R’) U (R U R’)"
+    },
+    {
+      "i": 27,
+      "s": "./images/f2l/27.png",
+      "f": "y (L’ U L U’) (L’ U L)"
+    },
+    {
+      "i": 28,
+      "s": "./images/f2l/28.png",
+      "f": "(R U’ R’ U) (R U’ R’)"
+    },
+    {
+      "i": 29,
+      "s": "./images/f2l/29.png",
+      "f": "(R U R’) U’ (R U R’)"
+    },
+    {
+      "i": 30,
+      "s": "./images/f2l/30.png",
+      "f": "(R’ F R F’ U) (R U’ R’)"
+    },
+    {
+      "i": 31,
+      "s": "./images/f2l/31.png",
+      "f": "(U R U R’) U2 (R U R’)"
+    },
+    {
+      "i": 32,
+      "s": "./images/f2l/32.png",
+      "f": "(U’ R U’ R’) U2 (R U’ R’)"
+    },
+    {
+      "i": 33,
+      "s": "./images/f2l/33.png",
+      "f": "U’ (R U M’ U’) (R’ U R U) Rw’"
+    },
+    {
+      "i": 34,
+      "s": "./images/f2l/34.png",
+      "f": "(U’ R U R’) Dw (R’ U’ R)"
+    },
+    {
+      "i": 35,
+      "s": "./images/f2l/35.png",
+      "f": "(R U’ R’ U) y (L’ U L)"
+    },
+    {
+      "i": 36,
+      "s": "./images/f2l/36.png",
+      "f": "(R U R’) U’ (R U R’) U’ (R U R’)"
+    },
+    {
+      "i": 37,
+      "s": "./images/f2l/37.png",
+      "f": "(R U’ R’) Dw (R’ U2 R) U2′ (R’ U R)"
+    },
+    {
+      "i": 38,
+      "s": "./images/f2l/38.png",
+      "f": "(R U’ R’) U (R U2 R’) U (R U’ R’)"
+    },
+    {
+      "i": 39,
+      "s": "./images/f2l/39.png",
+      "f": "(R U’ R’) U’ (R U R’) U2 (R U’ R’)"
+    },
+    {
+      "i": 40,
+      "s": "./images/f2l/40.png",
+      "f": "(R U’ R’) (U2 y’) (R’ U’ R) U’ (R’ U R)"
+    },
+    {
+      "i": 41,
+      "s": "./images/f2l/41.png",
+      "f": "(R U’ R’ U’) (R U’ R’ U) y’ (R’ U’ R)"
+    }
+  ],
   "OLL": [
     {
       "i": 1,
