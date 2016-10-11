@@ -1,7 +1,7 @@
 # speedcubing-algoritms
 SpeedCubing Algoritms
 
-## Preview
+Preview [Speed-Cubing App](https://rawgit.com/nmatei/speedcubing-algoritms/master/index.html)
 
-[Speed-Cubing App](https://rawgit.com/nmatei/speedcubing-algoritms/master/index.html)
+
 

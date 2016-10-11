@@ -47,7 +47,8 @@ function showAlgorithms() {
 
     // TODO temporary add custom filter
     var filtered = [
-            "OLL-8", "OLL-9", "OLL-10", "OLL-11", "OLL-20", "OLL-22", "OLL-23", "OLL-28", "OLL-29", "OLL-34",
+            // "OLL-8", "OLL-9",
+            "OLL-10", "OLL-11", /*"OLL-20",*/ "OLL-22", "OLL-23", "OLL-28", "OLL-29", "OLL-34",
             "OLL-35", "OLL-42", "OLL-44", "OLL-50", "OLL-51", "OLL-52", "OLL-53", "OLL-54", "OLL-55", "OLL-57",
             'PLL-E', 'PLL-F', 'PLL-Ra', 'PLL-Rb', 'PLL-Na', 'PLL-Nb', 'PLL-Ga', 'PLL-Gb', 'PLL-Gc', 'PLL-Gd'
         ],
@@ -142,3 +143,5 @@ $('#option-show-filtered').change(function () {
 // $('#option-sub-title').change(function() {
 //     $('body').removeClass( "f-show-subtitle" );
 // });
+
+// TODO allow users to specify their own sub-algorithm to highlight
