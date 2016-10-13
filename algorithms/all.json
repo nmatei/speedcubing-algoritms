@@ -415,7 +415,8 @@
     {
       "i": 42,
       "s": "./images/oll/a42.png",
-      "f": "Fw <span class=\"formula f-RURiUi\">R U R’ U’</span> <span class=\"formula f-RURiUi\">R U R’ U’</span> Fw’"
+      "f": "Fw <span class=\"formula f-RURiUi\">R U R’ U’</span> <span class=\"formula f-RURiUi\">R U R’ U’</span> Fw’",
+      "scramble": "*2"
     },
     {
       "i": 43,
