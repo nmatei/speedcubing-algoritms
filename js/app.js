@@ -99,7 +99,7 @@ $('#algModal').on('show.bs.modal', function (event) {
         }
         return move;
     });
-    scramble = scramble.join(' ');
+    scramble = (algorithm.scramble ? (' ' + algorithm.scramble + ' / ') : '') + scramble.join(' ');
 
     modal.find('.modal-title').html('<img class="icon" src="' + algorithm.s +
         '"><strong>' + id + '</strong>; ');
