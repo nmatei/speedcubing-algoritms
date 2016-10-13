@@ -1,0 +1,28 @@
+.algorithm {
+    min-height: 150px;
+    width: 130px;
+    /*display:table;*/
+    /*page-break-inside: avoid;*/
+}
+
+.algorithm .f-text {
+    white-space: normal;
+}
+
+.algorithm img {
+    width: 55px;
+    display: block;
+    /*margin: auto;*/
+    margin: 0 auto 5px auto;
+}
+
+.algorithm .f-text {
+    font-size: 12px;
+}
+
+body{
+    -webkit-print-color-adjust:exact;
+}
+
+
+
