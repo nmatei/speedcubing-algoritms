@@ -35,13 +35,13 @@ html, body {
     width: 100%;
 }
 .algorithm .f-text {
-    font-size: 8px;
+    font-size: 10px;
+    min-height: 19px;
     text-align: center;
     font-weight: bold;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    min-height: 15px;
 }
 
 #algModal .modal-body {
@@ -54,6 +54,12 @@ html, body {
     width: 48px;
     margin: -10px 5px -10px -5px;
 }
+
+#algModal .modal-body img {
+    max-width: 100px;
+    float: left;
+}
+
 #algModal .modal-body .scramble {
     margin-top: 10px;
     font-size: 18px;

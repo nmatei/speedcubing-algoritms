@@ -102,10 +102,13 @@ $('#algModal').on('show.bs.modal', function (event) {
     });
     scramble = (algorithm.scramble ? (' ' + algorithm.scramble + ' / ') : '') + scramble.join(' ');
 
-    modal.find('.modal-title').html('<img class="icon" src="' + algorithm.s +
-        '"><strong>' + id + '</strong>; ');
+    modal.find('.modal-title').html('<strong>' + id + '</strong>; ');
         // 'Scramble: <span class="scramble">' + scramble + '</span>');
-    modal.find('.modal-body').html(algorithm.f + '<div class="scramble">' + scramble + '</div>');
+    modal.find('.modal-body').html(
+        '<img src="' + algorithm.s + '">' +
+        algorithm.f +
+        '<div class="scramble">' + scramble + '</div>'
+    );
 });
 
 $('#option-icons').change(function () {
