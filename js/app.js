@@ -100,7 +100,7 @@ $('#algModal').on('show.bs.modal', function (event) {
         }
         return move;
     });
-    scramble = (algorithm.scramble ? (' ' + algorithm.scramble + ' / ') : '') + scramble.join(' ');
+    scramble = (algorithm.scramble ? (' *' + algorithm.scramble + ' / ') : '') + scramble.join(' ');
 
     modal.find('.modal-title').html('<strong>' + id + '</strong>; ');
         // 'Scramble: <span class="scramble">' + scramble + '</span>');
