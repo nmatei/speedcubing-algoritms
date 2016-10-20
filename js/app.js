@@ -11,6 +11,23 @@ var SpeedCubing = {
 
     get: function(id) {
         return SpeedCubing.algKeys[id];
+    },
+
+    getScramble: function(algorithm) {
+        var scramble = $('<span>' + algorithm.f + '</span>').text().replace(/[\(\)]/gi, '').split(/\s+/);
+        scramble.reverse();
+        scramble = scramble.map(function (move) {
+            if(!move.endsWith('2')) {
+                if (move.indexOf('’') !== -1) {
+                    move = move.replace('’', '');
+                } else {
+                    move += '’';
+                }
+            }
+            return move;
+        });
+        scramble = (algorithm.scramble ? (' *' + algorithm.scramble + ' / ') : '') + scramble.join(' ');
+        return scramble;
     }
 };
 
@@ -89,18 +106,7 @@ $('#algModal').on('show.bs.modal', function (event) {
         modal = $(this);
 
     var algorithm = SpeedCubing.get(id),
-        scramble = $('<span>' + algorithm.f + '</span>').text().replace(/[\(\)]/gi, '').split(/\s+/);
-
-    scramble.reverse();
-    scramble = scramble.map(function (move) {
-        if (move.indexOf('’') !== -1) {
-            move = move.replace('’', '');
-        } else {
-            move += '’';
-        }
-        return move;
-    });
-    scramble = (algorithm.scramble ? (' *' + algorithm.scramble + ' / ') : '') + scramble.join(' ');
+        scramble = SpeedCubing.getScramble(algorithm);
 
     modal.find('.modal-title').html('<strong>' + id + '</strong>; ');
         // 'Scramble: <span class="scramble">' + scramble + '</span>');
