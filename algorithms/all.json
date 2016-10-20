@@ -315,12 +315,14 @@
     {
       "i": 22,
       "s": "./images/oll/241.png",
-      "f": "F (<span class=\"formula f-RURiUi\">R U R’ U’</span>) (<span class=\"formula f-RURiUi\">R U R’ U’</span>) F’"
+      "f": "F (<span class=\"formula f-RURiUi\">R U R’ U’</span>) (<span class=\"formula f-RURiUi\">R U R’ U’</span>) F’",
+      "scramble": 2
     },
     {
       "i": 23,
       "s": "./images/oll/231.png",
-      "f": "F’ (<span class=\"formula f-LiUiLU\" title=\"i (Left)\">L’ U’ L U</span>) (<span class=\"formula f-LiUiLU\" title=\"i (Left)\">L’ U’ L U</span>) F"
+      "f": "F’ (<span class=\"formula f-LiUiLU\" title=\"i (Left)\">L’ U’ L U</span>) (<span class=\"formula f-LiUiLU\" title=\"i (Left)\">L’ U’ L U</span>) F",
+      "scramble": 2
     },
     {
       "i": 24,
