@@ -64,10 +64,11 @@ function showAlgorithms() {
 
     // TODO temporary add custom filter
     var filtered = [
-            "F2L-9", "F2L-27", "F2L-28", "F2L-29", "F2L-30", "F2L-31", "F2L-32", "F2L-33", "F2L-34", "F2L-36", "F2L-37", "F2L-38", "F2L-39", "F2L-40", "F2L-41",
+            "F2L-9", "F2L-27", /*"F2L-28", */"F2L-29", "F2L-30", "F2L-31", "F2L-32", "F2L-33", "F2L-34", "F2L-36", "F2L-37", "F2L-38", "F2L-39", "F2L-40", "F2L-41",
             // "OLL-8", "OLL-9",
-            "OLL-10", "OLL-11", /*"OLL-20",*/ "OLL-22", "OLL-23", "OLL-28", "OLL-29", "OLL-34",
-            "OLL-35", "OLL-42", "OLL-44", "OLL-50", "OLL-51", "OLL-52", "OLL-53", "OLL-54", "OLL-55", "OLL-57",
+            "OLL-10", "OLL-11", /*"OLL-20",*/ "OLL-22", "OLL-23", "OLL-28", "OLL-29",
+            /*"OLL-34", "OLL-35", */
+            "OLL-42", "OLL-44", "OLL-50", "OLL-51", "OLL-52", "OLL-53", "OLL-54", /*"OLL-55", "OLL-57",*/
             'PLL-E', 'PLL-F', 'PLL-Ra', 'PLL-Rb', 'PLL-Na', 'PLL-Nb', 'PLL-Ga', 'PLL-Gb', 'PLL-Gc', 'PLL-Gd'
         ],
         skipAlgs = [
