@@ -40,7 +40,14 @@ var SpeedCubing = {
             appSettings = JSON.parse(appSettings);
             $.extend(SpeedCubing.settings, appSettings);
         }
-        // todo body cls
+        console.debug('app settings', SpeedCubing.settings);
+
+        // current states
+        if(SpeedCubing.settings.icons) {
+            $('body').addClass('f-icons');
+            $('#option-icons').attr('checked', true);
+        }
+
     },
 
     save: function(config) {
@@ -147,11 +154,11 @@ $('#algModal').on('show.bs.modal', function (event) {
 });
 
 $('#option-icons').change(function () {
-    SpeedCubing.save({icons: 'f-icons'});
+    SpeedCubing.save({icons: true});
     $('body').addClass("f-icons");
 });
 $('#option-text').change(function () {
-    SpeedCubing.save({icons: ''});
+    SpeedCubing.save({icons: false});
     $('body').removeClass("f-icons");
 });
 
