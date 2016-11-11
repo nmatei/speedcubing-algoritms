@@ -45,9 +45,18 @@ var SpeedCubing = {
         // current states
         if(SpeedCubing.settings.icons) {
             $('body').addClass('f-icons');
-            $('#option-icons').attr('checked', true);
+            $("#option-icons").parent('.btn').button("toggle");
+        } else {
+            $("#option-text").parent('.btn').button("toggle");
         }
 
+        $("#option-show-" + SpeedCubing.settings.filtered).parent('.btn').button("toggle");
+
+        $.each(SpeedCubing.settings.show, function(key, visible) {
+            if (visible) {
+                $("#option-" + key).parent('.btn').button("toggle");
+            }
+        });
     },
 
     save: function(config) {
@@ -57,14 +66,13 @@ var SpeedCubing = {
         }
         $.extend(SpeedCubing.settings, config);
         //todo save
-        localStorage.setItem('app-settings', JSON.stringify(SpeedCubing));
+        localStorage.setItem('app-settings', JSON.stringify(SpeedCubing.settings));
     },
 
     showAlgo: function () {
         var show, algorithms = [];
 
         $.each(SpeedCubing.settings.show, function(key, visible) {
-            console.warn('key, visible: ', key, visible);
             if (visible) {
                 algorithms = algorithms.concat(SpeedCubing.alg[key]);
             }
@@ -82,7 +90,7 @@ var SpeedCubing = {
                 28, 55, 57
             ];
 
-        if (SpeedCubing.settings.filtered) {
+        if (SpeedCubing.settings.filtered === 'filtered') {
             show = algorithms.filter(function (alg) {
                 return filtered.indexOf(alg.i) !== -1;
             });
@@ -154,10 +162,12 @@ $('#algModal').on('show.bs.modal', function (event) {
 });
 
 $('#option-icons').change(function () {
+    console.debug('icons: ', true);
     SpeedCubing.save({icons: true});
     $('body').addClass("f-icons");
 });
 $('#option-text').change(function () {
+    console.debug('text: ', true);
     SpeedCubing.save({icons: false});
     $('body').removeClass("f-icons");
 });
@@ -190,10 +200,12 @@ $('#option-PLL').change(function () {
 });
 
 $('#option-show-all').change(function () {
+    console.debug('option-show-all');
     SpeedCubing.save({filtered: 'all'});
     SpeedCubing.showAlgo();
 });
 $('#option-show-filtered').change(function () {
+    console.debug('option-show-filtered');
     SpeedCubing.save({filtered: 'filtered'});
     SpeedCubing.showAlgo();
 });
