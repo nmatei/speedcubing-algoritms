@@ -12,6 +12,10 @@ html, body {
     list-style: none;
 }
 
+.navbar-brand {
+    padding: 7px 15px;
+}
+
 .algorithm {
     border: 1px solid #29a7e1;
 	box-shadow: 1px 1px 1px #888888;
