@@ -571,12 +571,14 @@
     {
       "i": "Na",
       "s": "./images/pll/Na.png",
-      "f": "R’ U R U’ R’ F’ U’ F R U R’ F R’ F’ R U’ R"
+      "f": "R’ U R U’ R’ F’ U’ F R U R’ F R’ F’ R U’ R",
+      "scramble": 1
     },
     {
       "i": "Nb",
       "s": "./images/pll/Nb.png",
-      "f": "R’ U R2 B2 U R’ B2 R U’ B2 R2 U’ R"
+      "f": "R’ U R2 B2 U R’ B2 R U’ B2 R2 U’ R",
+      "scramble": 1
     },
     {
       "i": "Ga",
