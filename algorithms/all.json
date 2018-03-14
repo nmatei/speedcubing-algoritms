@@ -551,7 +551,8 @@
     {
       "i": "F",
       "s": "./images/pll/ASDF.png",
-      "f": "R’ U’ F’ <span class=\"formula f-RURiUi\">R U R’ U’</span> R’ F R2 U’ R’ U’ R U R’ U R"
+      "f": "R’ U’ F’ <span class=\"formula f-RURiUi\">R U R’ U’</span> R’ F R2 U’ R’ U’ R U R’ U R",
+      "scramble": 1
     },
     {
       "i": "E",
