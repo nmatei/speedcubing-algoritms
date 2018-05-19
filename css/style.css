@@ -17,6 +17,8 @@ html, body {
 }
 
 .algorithm {
+    position: relative;
+    overflow: visible;
     border: 1px solid #29a7e1;
 	box-shadow: 1px 1px 1px #888888;
     border-radius: 5px;
@@ -46,6 +48,14 @@ html, body {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+}
+.algorithm:before{
+    content: attr(data-alg-key);
+    position: absolute;
+    font-size: 8px;
+    top: 2px;
+    left: 2px;
+    color: #29a7e1;
 }
 
 #algModal .modal-body {

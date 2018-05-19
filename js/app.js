@@ -92,7 +92,7 @@ var SpeedCubing = {
 
         if (SpeedCubing.settings.filtered === 'filtered') {
             show = algorithms.filter(function (alg) {
-                return filtered.indexOf(alg.i) !== -1;
+                return filtered.indexOf(alg.name) !== -1;
             });
         } else {
             show = algorithms;
@@ -102,11 +102,13 @@ var SpeedCubing = {
             var formula = $('<span>' + alg.f + '</span>').text();
 
             return [
-                '<li class="algorithm',
-                skipAlgs.indexOf(alg.i) === -1 ? '' : ' f-skip',
-                '" data-alg-id="', alg.i, '" data-toggle="modal" data-target="#algModal" title="', alg.i, ' - ', formula, '">',
-                '<img src="', alg.s, '">',
-                '<div class="f-text">', alg.f, '</div>',
+                '<li class="algorithm', skipAlgs.indexOf(alg.name) === -1 ? '' : ' f-skip', '"',
+                    ' data-alg-id="', alg.name, '"',
+                    ' data-alg-key="', alg.i, '"',
+                    ' data-toggle="modal"',
+                    ' data-target="#algModal" title="', alg.name, ' - ', formula, '">',
+                    '<img src="', alg.s, '">',
+                    '<div class="f-text">', alg.f, '</div>',
                 '</li>'
             ].join('');
         });
@@ -122,16 +124,16 @@ var SpeedCubing = {
             success: function (algorithms) {
                 var algKeys = {};
                 algorithms.F2L.forEach(function (el) {
-                    el.i = "F2L-" + el.i;
-                    algKeys[el.i] = el;
+                    el.name = "F2L-" + el.i;
+                    algKeys[el.name] = el;
                 });
                 algorithms.OLL.forEach(function (el) {
-                    el.i = "OLL-" + el.i;
-                    algKeys[el.i] = el;
+                    el.name = "OLL-" + el.i;
+                    algKeys[el.name] = el;
                 });
                 algorithms.PLL.forEach(function (el) {
-                    el.i = "PLL-" + el.i;
-                    algKeys[el.i] = el;
+                    el.name = "PLL-" + el.i;
+                    algKeys[el.name] = el;
                 });
                 SpeedCubing.alg = algorithms;
                 SpeedCubing.algKeys = algKeys;
