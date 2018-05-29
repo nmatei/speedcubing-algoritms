@@ -225,12 +225,12 @@
     {
       "i": 4,
       "s": "./images/oll/42.png",
-      "f": "Rw U R’ U’ Rw’ F R F’"
+      "f": "<span class=\"formula f-RwURiUiRwiFR x-ho-hide\">Rw U R’ U’ Rw’ F R</span> F’"
     },
     {
       "i": 5,
       "s": "./images/oll/51.png",
-      "f": "F’ Rw U R’ U’ Rw’ F R"
+      "f": "F’ <span class=\"formula f-RwURiUiRwiFR x-ho-hide\">Rw U R’ U’ Rw’ F R</span>"
     },
     {
       "i": 6,

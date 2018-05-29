@@ -78,6 +78,10 @@ html, body {
     float: left;
 }
 
+#algModal .modal-body .formula {
+    padding: 4px 10px;
+}
+
 #algModal .modal-body .scramble {
     margin-top: 10px;
     font-size: 18px;
@@ -162,8 +166,11 @@ html, body {
     content: '↓';
 }
 
+.f-RwURiUiRwiFR:before {
+    content: '↟↡ ';
+}
 
-body.f-icons .formula {
+body.f-icons .formula:not(.ho-hide) {
     font-size: 0;
     padding: 0 1vw;
 }
