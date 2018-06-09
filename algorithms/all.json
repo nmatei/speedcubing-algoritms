@@ -562,7 +562,8 @@
     {
       "i": "Ra",
       "s": "./images/pll/Ra.png",
-      "f": "R U2 R’ U2 R B’ R’ U’ R U R B R2<span>\n</span>"
+      "f": "R U2 R’ U2 R B’ R’ U’ R U R B R2 U",
+      "scramble": 1
     },
     {
       "i": "Rb",
