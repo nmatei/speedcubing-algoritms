@@ -111,6 +111,12 @@ const SpeedCubing = {
             ].join('');
         });
 
+        if (elements.length === 0) {
+            elements.push(`<div class="empty-list">
+                <h3>You don't have any Filtered algorithms</h3>
+                <p>To add a new one select <strong>All</strong> algorithms, open one and check <strong>Use in filter</strong></p>
+            </div>`);
+        }
         const $algorithms = $('#algorithms');
         $algorithms.html('');
         $algorithms.append(elements.join(''));

@@ -7,10 +7,17 @@ html, body {
 }
 #algorithms {
     padding: 5px;
-    display: inline-block;
+    /*display: inline-block;*/
     list-style: none;
 }
-
+h3 {
+    font-size: 1.2em;
+}
+.empty-list {
+    text-align: center;
+    padding-top: 40px;
+    color: #8898a9;
+}
 .navbar-brand {
     padding: 7px 15px;
 }

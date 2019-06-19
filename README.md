@@ -11,3 +11,4 @@ Preview [Speed-Cubing App](https://nmatei.github.io/speedcubing-algoritms/)
 - [x] Print current view
 - [x] Show one algorithm in popup (bigger font size)
 - [x] Mark algorithm as known
+- [ ] Add 4x4 algorithms
