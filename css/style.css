@@ -3,8 +3,7 @@ html, body {
 }
 
 #settings {
-    padding: 5px 10px 0 10px;
-    margin-bottom: 5px;
+
 }
 #algorithms {
     padding: 5px;
@@ -89,50 +88,6 @@ html, body {
     text-align: right;
     color: blue;
     border-top: 1px solid #e5e5e5;
-}
-
-@media (min-width: 1292px) {
-    .modal-lg {
-        width: 1200px;
-    }
-}
-@media (min-width: 1492px) {
-    .modal-lg {
-        width: 1400px;
-    }
-}
-
-@media (min-width: 568px){
-    .navbar-toggle {
-        display: none;
-    }
-}
-
-@media (min-width: 568px) {
-    .navbar-collapse.collapse {
-        display: block!important;
-        height: auto!important;
-        padding-bottom: 0;
-        overflow: visible!important;
-    }
-}
-
-@media (min-width: 568px) {
-    .navbar-collapse {
-        width: auto;
-        border-top: 0;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-    }
-}
-
-@media (min-width: 568px) {
-    .navbar-collapse {
-        width: auto;
-        border-top: 0;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-    }
 }
 
 .formula {

@@ -1,15 +1,13 @@
-var SpeedCubing = {
+const SpeedCubing = {
     settings: {
-        icons: true,
+        icons: false,
         filtered: 'all',
-        /*options: {
-            filtered: true
-        },*/
         show: {
             F2L: true,
             OLL: true,
             PLL: true
-        }
+        },
+        filters: []
     },
     alg: {},
 
@@ -35,12 +33,12 @@ var SpeedCubing = {
     },
 
     init: function() {
-        var appSettings = localStorage.getItem('app-settings');
+        let appSettings = localStorage.getItem('app-settings');
         if(appSettings !== null){
             appSettings = JSON.parse(appSettings);
             $.extend(SpeedCubing.settings, appSettings);
         }
-        console.debug('app settings', SpeedCubing.settings);
+        //console.debug('app settings', SpeedCubing.settings);
 
         // current states
         if(SpeedCubing.settings.icons) {
@@ -70,7 +68,7 @@ var SpeedCubing = {
     },
 
     showAlgo: function () {
-        var show, algorithms = [];
+        let show, algorithms = [];
 
         $.each(SpeedCubing.settings.show, function(key, visible) {
             if (visible) {
@@ -78,31 +76,31 @@ var SpeedCubing = {
             }
         });
 
-        // TODO temporary add custom filter
-        var filtered = [
-                "F2L-9", "F2L-27", "F2L-28", "F2L-29", "F2L-30", "F2L-31", "F2L-32", "F2L-33", "F2L-34", "F2L-36", "F2L-37", "F2L-38", "F2L-39", "F2L-40", "F2L-41",
-                // "OLL-8", "OLL-9",
-                "OLL-10", "OLL-11", /*"OLL-20",*/ "OLL-22", "OLL-23", "OLL-28", "OLL-29", "OLL-34",
-                "OLL-35", "OLL-42", "OLL-44", "OLL-50", "OLL-51", "OLL-52", "OLL-53", "OLL-54", "OLL-55", "OLL-57",
-                'PLL-E', 'PLL-F', 'PLL-Ra', 'PLL-Rb', 'PLL-Na', 'PLL-Nb', 'PLL-Ga', 'PLL-Gb', 'PLL-Gc', 'PLL-Gd'
-            ],
-            skipAlgs = [
-                28, 55, 57
-            ];
+        // const filters = [
+        //         "F2L-9", "F2L-27", "F2L-28", "F2L-29", "F2L-30", "F2L-31", "F2L-32", "F2L-33", "F2L-34", "F2L-36", "F2L-37", "F2L-38", "F2L-39", "F2L-40", "F2L-41",
+        //         // "OLL-8", "OLL-9",
+        //         "OLL-10", "OLL-11", /*"OLL-20",*/ "OLL-22", "OLL-23", "OLL-28", "OLL-29", "OLL-34",
+        //         "OLL-35", "OLL-42", "OLL-44", "OLL-50", "OLL-51", "OLL-52", "OLL-53", "OLL-54", "OLL-55", "OLL-57",
+        //         'PLL-E', 'PLL-F', 'PLL-Ra', 'PLL-Rb', 'PLL-Na', 'PLL-Nb', 'PLL-Ga', 'PLL-Gb', 'PLL-Gc', 'PLL-Gd'
+        //     ];
+
+        const filters = SpeedCubing.settings.filters;
+        // TODO find why?
+        const skipAlgs = [28, 55, 57];
 
         if (SpeedCubing.settings.filtered === 'filtered') {
             show = algorithms.filter(function (alg) {
-                return filtered.indexOf(alg.name) !== -1;
+                return filters.indexOf(alg.name) !== -1;
             });
         } else {
             show = algorithms;
         }
 
-        var elements = show.map(function (alg) {
-            var formula = $('<span>' + alg.f + '</span>').text();
+        const elements = show.map(function (alg) {
+            const formula = $('<span>' + alg.f + '</span>').text();
 
             return [
-                '<li class="algorithm', skipAlgs.indexOf(alg.name) === -1 ? '' : ' f-skip', '"',
+                '<li class="algorithm', skipAlgs.indexOf(alg.i) === -1 ? '' : ' f-skip', '"',
                     ' data-alg-id="', alg.name, '"',
                     ' data-alg-key="', alg.i, '"',
                     ' data-toggle="modal"',
@@ -113,7 +111,7 @@ var SpeedCubing = {
             ].join('');
         });
 
-        var $algorithms = $('#algorithms');
+        const $algorithms = $('#algorithms');
         $algorithms.html('');
         $algorithms.append(elements.join(''));
     },
@@ -122,7 +120,7 @@ var SpeedCubing = {
         $.ajax({
             url: 'algorithms/all.json',
             success: function (algorithms) {
-                var algKeys = {};
+                const algKeys = {};
                 algorithms.F2L.forEach(function (el) {
                     el.name = "F2L-" + el.i;
                     algKeys[el.name] = el;
@@ -147,13 +145,14 @@ SpeedCubing.init();
 SpeedCubing.load();
 
 $('#algModal').on('show.bs.modal', function (event) {
-    var button = $(event.relatedTarget),
+    const button = $(event.relatedTarget),
         id = button.data('alg-id'),
         modal = $(this);
 
-    var algorithm = SpeedCubing.get(id),
+    const algorithm = SpeedCubing.get(id),
         scramble = SpeedCubing.getScramble(algorithm);
 
+    modal.data('alg-id', id);
     modal.find('.modal-title').html('<strong>' + id + '</strong>; ');
         // 'Scramble: <span class="scramble">' + scramble + '</span>');
     modal.find('.modal-body').html(
@@ -161,15 +160,18 @@ $('#algModal').on('show.bs.modal', function (event) {
         algorithm.f +
         '<div class="scramble">' + scramble + '</div>'
     );
+
+    const isInFilter = SpeedCubing.settings.filters.some(key => key === id);
+    $('#use-in-filter').prop('checked', isInFilter);
 });
 
 $('#option-icons').change(function () {
-    console.debug('icons: ', true);
+    //console.debug('icons: ', true);
     SpeedCubing.save({icons: true});
     $('body').addClass("f-icons");
 });
 $('#option-text').change(function () {
-    console.debug('text: ', true);
+    //console.debug('text: ', true);
     SpeedCubing.save({icons: false});
     $('body').removeClass("f-icons");
 });
@@ -202,14 +204,31 @@ $('#option-PLL').change(function () {
 });
 
 $('#option-show-all').change(function () {
-    console.debug('option-show-all');
+    // console.debug('option-show-all');
     SpeedCubing.save({filtered: 'all'});
     SpeedCubing.showAlgo();
 });
 $('#option-show-filtered').change(function () {
-    console.debug('option-show-filtered');
+    //console.debug('option-show-filtered');
     SpeedCubing.save({filtered: 'filtered'});
     SpeedCubing.showAlgo();
+});
+
+$('#use-in-filter').change(function () {
+    const checkbox = $(this),
+        id = $('#algModal').data('alg-id'),
+        checked = checkbox.prop("checked");
+    //console.debug('use-in-filter', id, checked);
+    if (checked) {
+        SpeedCubing.settings.filters.push(id);
+    } else {
+        SpeedCubing.settings.filters = SpeedCubing.settings.filters.filter(key => key !== id);
+    }
+    SpeedCubing.save({filters: SpeedCubing.settings.filters});
+
+    if (SpeedCubing.settings.filtered) {
+        SpeedCubing.showAlgo();
+    }
 });
 
 // TODO show/hide sub-title

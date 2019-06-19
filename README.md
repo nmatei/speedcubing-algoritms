@@ -1,5 +1,6 @@
-# speedcubing-algoritms
-SpeedCubing Algoritms
+# speedcubing-algorithms
+
+SpeedCubing Algorithms
 
 Preview [Speed-Cubing App](https://nmatei.github.io/speedcubing-algoritms/)
 
@@ -8,9 +9,5 @@ Preview [Speed-Cubing App](https://nmatei.github.io/speedcubing-algoritms/)
 
 - [x] Select pairs of algorithms to show (F2L/OLL/PLL)
 - [x] Print current view
-- [x] Show one algorithm in popup (bigger font size)  
-
-## TODO
-
-- [ ] Mark algorithm as known
-- [ ] Advanced filter 
+- [x] Show one algorithm in popup (bigger font size)
+- [x] Mark algorithm as known
