@@ -73,7 +73,6 @@ const SpeedCubing = {
             delete config.show;
         }
         $.extend(SpeedCubing.settings, config);
-        //todo save
         localStorage.setItem('app-settings', JSON.stringify(SpeedCubing.settings));
     },
 
