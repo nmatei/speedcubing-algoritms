@@ -1,13 +1,13 @@
 const SpeedCubing = {
     settings: {
         icons: false,
-        filtered: 'all',
+        listType: 'all', // all | favorites
         show: {
             F2L: true,
             OLL: true,
             PLL: true
         },
-        filters: []
+        favorites: []
     },
     alg: {},
 
@@ -48,7 +48,7 @@ const SpeedCubing = {
             $("#option-text").parent('.btn').button("toggle");
         }
 
-        $("#option-show-" + SpeedCubing.settings.filtered).parent('.btn').button("toggle");
+        $("#option-show-" + SpeedCubing.settings.listType).parent('.btn').button("toggle");
 
         $.each(SpeedCubing.settings.show, function(key, visible) {
             if (visible) {
@@ -76,21 +76,13 @@ const SpeedCubing = {
             }
         });
 
-        // const filters = [
-        //         "F2L-9", "F2L-27", "F2L-28", "F2L-29", "F2L-30", "F2L-31", "F2L-32", "F2L-33", "F2L-34", "F2L-36", "F2L-37", "F2L-38", "F2L-39", "F2L-40", "F2L-41",
-        //         // "OLL-8", "OLL-9",
-        //         "OLL-10", "OLL-11", /*"OLL-20",*/ "OLL-22", "OLL-23", "OLL-28", "OLL-29", "OLL-34",
-        //         "OLL-35", "OLL-42", "OLL-44", "OLL-50", "OLL-51", "OLL-52", "OLL-53", "OLL-54", "OLL-55", "OLL-57",
-        //         'PLL-E', 'PLL-F', 'PLL-Ra', 'PLL-Rb', 'PLL-Na', 'PLL-Nb', 'PLL-Ga', 'PLL-Gb', 'PLL-Gc', 'PLL-Gd'
-        //     ];
-
-        const filters = SpeedCubing.settings.filters;
+        const favorites = SpeedCubing.settings.favorites;
         // TODO find why?
         const skipAlgs = [28, 55, 57];
 
-        if (SpeedCubing.settings.filtered === 'filtered') {
+        if (SpeedCubing.settings.listType === 'favorites') {
             show = algorithms.filter(function (alg) {
-                return filters.indexOf(alg.name) !== -1;
+                return favorites.indexOf(alg.name) !== -1;
             });
         } else {
             show = algorithms;
@@ -113,8 +105,8 @@ const SpeedCubing = {
 
         if (elements.length === 0) {
             elements.push(`<div class="empty-list">
-                <h3>You don't have any Filtered algorithms</h3>
-                <p>To add a new one select <strong>All</strong> algorithms, open one and check <strong>Use in filter</strong></p>
+                <h3>You don't have any <strong>Favorite</strong> algorithms</h3>
+                <p>To add a new one select <strong>All</strong> algorithms, open one and check <strong>Favorite</strong></p>
             </div>`);
         }
         const $algorithms = $('#algorithms');
@@ -167,7 +159,7 @@ $('#algModal').on('show.bs.modal', function (event) {
         '<div class="scramble">' + scramble + '</div>'
     );
 
-    const isInFilter = SpeedCubing.settings.filters.some(key => key === id);
+    const isInFilter = SpeedCubing.settings.favorites.some(key => key === id);
     $('#use-in-filter').prop('checked', isInFilter);
 });
 
@@ -211,12 +203,12 @@ $('#option-PLL').change(function () {
 
 $('#option-show-all').change(function () {
     // console.debug('option-show-all');
-    SpeedCubing.save({filtered: 'all'});
+    SpeedCubing.save({listType: 'all'});
     SpeedCubing.showAlgo();
 });
-$('#option-show-filtered').change(function () {
-    //console.debug('option-show-filtered');
-    SpeedCubing.save({filtered: 'filtered'});
+$('#option-show-favorites').change(function () {
+    //console.debug('option-show-favorites');
+    SpeedCubing.save({listType: 'favorites'});
     SpeedCubing.showAlgo();
 });
 
@@ -226,13 +218,15 @@ $('#use-in-filter').change(function () {
         checked = checkbox.prop("checked");
     //console.debug('use-in-filter', id, checked);
     if (checked) {
-        SpeedCubing.settings.filters.push(id);
+        SpeedCubing.settings.favorites.push(id);
     } else {
-        SpeedCubing.settings.filters = SpeedCubing.settings.filters.filter(key => key !== id);
+        SpeedCubing.settings.favorites = SpeedCubing.settings.favorites.filter(key => key !== id);
     }
-    SpeedCubing.save({filters: SpeedCubing.settings.filters});
+    SpeedCubing.save({
+        favorites: SpeedCubing.settings.favorites
+    });
 
-    if (SpeedCubing.settings.filtered) {
+    if (SpeedCubing.settings.listType === 'favorites') {
         SpeedCubing.showAlgo();
     }
 });
