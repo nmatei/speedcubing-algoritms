@@ -55,6 +55,16 @@ const SpeedCubing = {
                 $("#option-" + key).parent('.btn').button("toggle");
             }
         });
+
+        // migrate old settings
+        let filters = SpeedCubing.settings.filters;
+        if (filters) {
+            delete SpeedCubing.settings.filters;
+            delete SpeedCubing.settings.filtered;
+            SpeedCubing.save({
+                favorites: filters
+            });
+        }
     },
 
     save: function(config) {
