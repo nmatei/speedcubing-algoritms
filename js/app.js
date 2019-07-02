@@ -33,7 +33,7 @@ const SpeedCubing = {
     },
 
     init: function() {
-        let appSettings = localStorage.getItem('app-settings');
+        var appSettings = localStorage.getItem('app-settings');
         if(appSettings !== null){
             appSettings = JSON.parse(appSettings);
             $.extend(SpeedCubing.settings, appSettings);
@@ -57,7 +57,7 @@ const SpeedCubing = {
         });
 
         // migrate old settings
-        let filters = SpeedCubing.settings.filters;
+        var filters = SpeedCubing.settings.filters;
         if (filters) {
             delete SpeedCubing.settings.filters;
             delete SpeedCubing.settings.filtered;
@@ -77,7 +77,7 @@ const SpeedCubing = {
     },
 
     showAlgo: function () {
-        let show, algorithms = [];
+        var show, algorithms = [];
 
         $.each(SpeedCubing.settings.show, function(key, visible) {
             if (visible) {
@@ -85,9 +85,9 @@ const SpeedCubing = {
             }
         });
 
-        const favorites = SpeedCubing.settings.favorites;
+        var favorites = SpeedCubing.settings.favorites;
         // TODO find why?
-        const skipAlgs = [28, 55, 57];
+        var skipAlgs = [28, 55, 57];
 
         if (SpeedCubing.settings.listType === 'favorites') {
             show = algorithms.filter(function (alg) {
@@ -97,8 +97,8 @@ const SpeedCubing = {
             show = algorithms;
         }
 
-        const elements = show.map(function (alg) {
-            const formula = $('<span>' + alg.f + '</span>').text();
+        var elements = show.map(function (alg) {
+            var formula = $('<span>' + alg.f + '</span>').text();
 
             return [
                 '<li class="algorithm', skipAlgs.indexOf(alg.i) === -1 ? '' : ' f-skip', '"',
@@ -120,7 +120,7 @@ const SpeedCubing = {
                 '</div>'
             ].join(''));
         }
-        const $algorithms = $('#algorithms');
+        var $algorithms = $('#algorithms');
         $algorithms.html('');
         $algorithms.append(elements.join(''));
     },
