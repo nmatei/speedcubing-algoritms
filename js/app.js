@@ -113,10 +113,12 @@ const SpeedCubing = {
         });
 
         if (elements.length === 0) {
-            elements.push(`<div class="empty-list">
-                <h3>You don't have any <strong>Favorite</strong> algorithms</h3>
-                <p>To add a new one select <strong>All</strong> algorithms, open one and check <strong>Favorite</strong></p>
-            </div>`);
+            elements.push([
+                '<div class="empty-list">',
+                    '<h3>You don\'t have any <strong>Favorite</strong> algorithms</h3>',
+                    '<p>To add a new one select <strong>All</strong> algorithms, open one and check <strong>Favorite</strong></p>',
+                '</div>'
+            ].join(''));
         }
         const $algorithms = $('#algorithms');
         $algorithms.html('');
