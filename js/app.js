@@ -170,7 +170,9 @@ $('#algModal').on('show.bs.modal', function (event) {
         '<div class="scramble">' + scramble + '</div>'
     );
 
-    var isInFilter = SpeedCubing.settings.favorites.some(key => key === id);
+    var isInFilter = SpeedCubing.settings.favorites.some(function (key) {
+        return key === id
+    });
     $('#use-in-filter').prop('checked', isInFilter);
 });
 
@@ -231,7 +233,9 @@ $('#use-in-filter').change(function () {
     if (checked) {
         SpeedCubing.settings.favorites.push(id);
     } else {
-        SpeedCubing.settings.favorites = SpeedCubing.settings.favorites.filter(key => key !== id);
+        SpeedCubing.settings.favorites = SpeedCubing.settings.favorites.filter(function(key){
+            return key !== id;
+        });
     }
     SpeedCubing.save({
         favorites: SpeedCubing.settings.favorites
