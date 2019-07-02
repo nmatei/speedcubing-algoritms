@@ -1,4 +1,4 @@
-const SpeedCubing = {
+var SpeedCubing = {
     settings: {
         icons: false,
         listType: 'all', // all | favorites
@@ -129,7 +129,7 @@ const SpeedCubing = {
         $.ajax({
             url: 'algorithms/all.json',
             success: function (algorithms) {
-                const algKeys = {};
+                var algKeys = {};
                 algorithms.F2L.forEach(function (el) {
                     el.name = "F2L-" + el.i;
                     algKeys[el.name] = el;
@@ -154,11 +154,11 @@ SpeedCubing.init();
 SpeedCubing.load();
 
 $('#algModal').on('show.bs.modal', function (event) {
-    const button = $(event.relatedTarget),
+    var button = $(event.relatedTarget),
         id = button.data('alg-id'),
         modal = $(this);
 
-    const algorithm = SpeedCubing.get(id),
+    var algorithm = SpeedCubing.get(id),
         scramble = SpeedCubing.getScramble(algorithm);
 
     modal.data('alg-id', id);
@@ -170,7 +170,7 @@ $('#algModal').on('show.bs.modal', function (event) {
         '<div class="scramble">' + scramble + '</div>'
     );
 
-    const isInFilter = SpeedCubing.settings.favorites.some(key => key === id);
+    var isInFilter = SpeedCubing.settings.favorites.some(key => key === id);
     $('#use-in-filter').prop('checked', isInFilter);
 });
 
@@ -224,7 +224,7 @@ $('#option-show-favorites').change(function () {
 });
 
 $('#use-in-filter').change(function () {
-    const checkbox = $(this),
+    var checkbox = $(this),
         id = $('#algModal').data('alg-id'),
         checked = checkbox.prop("checked");
     //console.debug('use-in-filter', id, checked);
