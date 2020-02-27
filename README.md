@@ -10,6 +10,7 @@ Preview [Speed-Cubing App](https://nmatei.github.io/speedcubing-algoritms/)
 - [x] Print current view
 - [x] Show one algorithm in popup (+scramble)
 - [x] Mark algorithm as Favorite
+- [ ] Show algorithms for beginers
 - [ ] Add timer inside each algorithm and show average of them
 - [ ] sort by algorithm average (to practice those)
 - [ ] Add 4x4 algorithms
